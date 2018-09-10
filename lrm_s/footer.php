@@ -32,5 +32,12 @@
 
 <?php wp_footer(); ?>
 
+
+<!-- Adding Bootstrap core JavaScript to the end of doc to load it faster -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery-2.2.4.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/bootstrap.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
+
 </body>
 </html>
