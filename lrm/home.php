@@ -24,5 +24,4 @@ function beans_child_view_add_description() {
 beans_remove_action( 'beans_post_image' );
 
 // Load Beans document.
-echo 'hello world';
 beans_load_document();
