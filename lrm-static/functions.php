@@ -1,13 +1,13 @@
 <?php
 /**
- * LRM functions and definitions
+ * Left Right Mind functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package LRM
+ * @package Left_Right_Mind
  */
 
-if ( ! function_exists( 'lrm_setup' ) ) :
+if ( ! function_exists( 'lrm_static_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'lrm_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function lrm_setup() {
+	function lrm_static_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on LRM, use a find and replace
-		 * to change 'lrm' to the name of your theme in all the template files.
+		 * If you're building a theme based on Left Right Mind, use a find and replace
+		 * to change 'lrm-static' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'lrm', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'lrm-static', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ if ( ! function_exists( 'lrm_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => esc_html__( 'Primary', 'lrm' ),
+			'menu-1' => esc_html__( 'Primary', 'lrm-static' ),
 		) );
 
 		/*
@@ -60,7 +60,7 @@ if ( ! function_exists( 'lrm_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'lrm_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'lrm_static_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -81,7 +81,7 @@ if ( ! function_exists( 'lrm_setup' ) ) :
 		) );
 	}
 endif;
-add_action( 'after_setup_theme', 'lrm_setup' );
+add_action( 'after_setup_theme', 'lrm_static_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -90,47 +90,47 @@ add_action( 'after_setup_theme', 'lrm_setup' );
  *
  * @global int $content_width
  */
-function lrm_content_width() {
+function lrm_static_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'lrm_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'lrm_static_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'lrm_content_width', 0 );
+add_action( 'after_setup_theme', 'lrm_static_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function lrm_widgets_init() {
+function lrm_static_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'lrm' ),
+		'name'          => esc_html__( 'Sidebar', 'lrm-static' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'lrm' ),
+		'description'   => esc_html__( 'Add widgets here.', 'lrm-static' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'lrm_widgets_init' );
+add_action( 'widgets_init', 'lrm_static_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function lrm_scripts() {
-	wp_enqueue_style( 'lrm-style', get_stylesheet_uri() );
+function lrm_static_scripts() {
+	wp_enqueue_style( 'lrm-static-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'lrm-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'lrm-static-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'lrm-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'lrm-static-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'lrm_scripts' );
+add_action( 'wp_enqueue_scripts', 'lrm_static_scripts' );
 
 /**
  * Implement the Custom Header feature.

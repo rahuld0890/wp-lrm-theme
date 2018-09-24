@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package LRM
+ * @package LRM Static
  */
 
 ?>
@@ -43,5 +43,20 @@
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
 
+<!-- Prachi -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="/lrm/js/jquery.min.js"></script>
+<script src="/lrm/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="/lrm/js/skrollr.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="text/javascript">
+	// skrollr.init({
+	//     forceHeight: false
+	// });
+	AOS.init({
+		duration: 2000,
+	});
+</script>
 </body>
 </html>

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package LRM
+ * @package LRM Static
  */
 
 if ( ! function_exists( 'lrm_setup' ) ) :

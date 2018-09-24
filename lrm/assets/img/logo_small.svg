@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57.353 26.187">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+        stroke-miterlimit: 10;
+        stroke-width: 0.26px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="0.5" x2="0.999" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5e56a5"/>
+      <stop offset="0.15" stop-color="#456bb0"/>
+      <stop offset="0.37" stop-color="#2783be"/>
+      <stop offset="0.59" stop-color="#1294c7"/>
+      <stop offset="0.8" stop-color="#059ecd"/>
+      <stop offset="1" stop-color="#01a2cf"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.121" y1="0.146" x2="0.708" y2="0.855" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f78d28"/>
+      <stop offset="0.25" stop-color="#f6862d"/>
+      <stop offset="0.61" stop-color="#f4713b"/>
+      <stop offset="1" stop-color="#f0554f"/>
+    </linearGradient>
+  </defs>
+  <g id="Gradient_Logo" data-name="Gradient Logo" transform="translate(-46.362)">
+    <path id="Path_1" data-name="Path 1" class="cls-1" d="M1216.64,545.88" transform="translate(-1141.614 -541.888)"/>
+    <path id="Path_15" data-name="Path 15" class="cls-2" d="M1212.338,530.686a13.024,13.024,0,0,1-9.245-3.8l-4.368-4.087,2.972-3.184,4.419,4.135a8.741,8.741,0,0,0,6.219,2.585h.016a8.737,8.737,0,0,0-.021-17.475h-.027a8.653,8.653,0,0,0-6.164,2.563l-8.469,8.256-3.042-3.122,8.445-8.23a12.949,12.949,0,0,1,9.219-3.823h.04a13.093,13.093,0,1,1,.029,26.186Z" transform="translate(-1121.727 -504.499)"/>
+    <path id="Path_16" data-name="Path 16" class="cls-3" d="M932.6,530.684a13.093,13.093,0,1,1,9.261-22.357l4.133,4.143-3.087,3.079-4.138-4.143a8.978,8.978,0,0,0-12.362,0,8.76,8.76,0,0,0,0,12.367,8.974,8.974,0,0,0,12.364,0l9.314-9.243,3.069,3.087-9.31,9.24A13.012,13.012,0,0,1,932.6,530.684Z" transform="translate(-873.149 -504.497)"/>
+    <path id="Path_17" data-name="Path 17" class="cls-1" d="M1216.64,545.88" transform="translate(-1141.614 -541.888)"/>
+  </g>
+</svg>

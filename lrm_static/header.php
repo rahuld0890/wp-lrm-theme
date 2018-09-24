@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package LRM
+ * @package LRM Static
  */
 
 ?>
@@ -21,7 +21,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<!-- Bootstrap core CSS -->
-	<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="<?php //bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet"> -->
 	
 	<!-- FontAwesome Icons -->
 	<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -31,6 +31,13 @@
 	
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel="stylesheet" type="text/css">
+		
+<!-- Prachi -->
+<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500" rel="stylesheet">
+<link href="/lrm/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="/lrm/css/style.css" rel="stylesheet">
+<link href="/lrm/css/people.css" rel="stylesheet">
 		
 	<?php wp_head(); ?>
 
